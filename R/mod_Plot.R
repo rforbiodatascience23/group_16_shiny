@@ -1,12 +1,14 @@
 #' Plot UI Function
 #'
-#' @description A shiny Module.
+#' @description Plots amino acid count.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
+#' @importFrom ggplot2 theme
+#' @import Centraldog
 mod_Plot_ui <- function(id){
   ns <- NS(id)
   tagList(
@@ -24,7 +26,7 @@ mod_Plot_ui <- function(id){
       mainPanel(
         plotOutput(
           outputId = ns("abundance")
-        )
+          )
       )
     )
 
@@ -37,6 +39,15 @@ mod_Plot_ui <- function(id){
 mod_Plot_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
+    output$abundance <- renderPlot({
+      if(input$peptide == ""){
+        NULL
+      } else{
+        input$peptide |>
+          Centraldog::plot_amino_acid_counts() +
+          ggplot2::theme(legend.position = "none")
+      }
+    })
 
   })
 }

@@ -1,33 +1,16 @@
 Package: Centraldogma16
 Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R:
-  c(person(given = "Sebastian",
-           family = "Wohlk",
-           role = c("aut","cre")
-           email = "seb2519@gmail.com"), 
-    person(given = "Hogjin",
-           family = "Chen",
-           role = ""cre"aut",
-           email = "chj18084828678@gmail.com")), 
-    person(given = "Jialu",
-           family = "Chen",
-           role = "aut",
-           email = "s194175@dtu.dk")), 
-    person(given = "Celina",
-           family = "Clausen",
-           role = "aut",
-           email = "s194228@dtu.dk")), 
-    person(given = "Laura",
-           family = "Bauer",
-           role = "aut",
-           email = "s231896@dtu.dk"))
+Authors@R:c(
+ .
+   )
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 
+    Centraldog,
     config (>= 0.3.1),
+    ggplot2,
     golem (>= 0.4.1),
-    pkgload,
     shiny (>= 1.7.5)
 Encoding: UTF-8
 LazyData: true

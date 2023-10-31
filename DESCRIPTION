@@ -1,13 +1,29 @@
 Package: Centraldogma16
-Title: An Amazing Shiny App
+Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Authors@R:
+  c(person(given = "Sebastian",
+           family = "Wohlk",
+           role = c("aut","cre")
+           email = "seb2519@gmail.com"), 
+    person(given = "Hogjin",
+           family = "Chen",
+           role = ""cre"aut",
+           email = "chj18084828678@gmail.com")), 
+    person(given = "Jialu",
+           family = "Chen",
+           role = "aut",
+           email = "s194175@dtu.dk")), 
+    person(given = "Celina",
+           family = "Clausen",
+           role = "aut",
+           email = "s194228@dtu.dk")), 
+    person(given = "Laura",
+           family = "Bauer",
+           role = "aut",
+           email = "s231896@dtu.dk"))
+Description: PKG_DESC.
+License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.4.1),

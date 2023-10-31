@@ -26,11 +26,22 @@ mod_plot_module_server <- function(id){
 
 sidebarLayout(
   sidebarPanel(
-    "peptide_sequence"
+    textAreaInput(
+      inputId = ns("peptide"),
+      label = "Peptide sequence",
+      width = 300,
+      height = 100,
+      placeholder = "Insert peptide sequence"
+    )
+
   ),
   mainPanel(
     "plot"
   )
+)
+
+plotOutput(
+  outputId = ns("abundance")
 )
 
 ## To be copied in the UI

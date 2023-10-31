@@ -12,11 +12,10 @@ app_ui <- function(request) {
     fluidPage(
       h1("Centraldogma16"),
       tabsetPanel(
-        tabPanel(title = "panel1",
+        tabPanel(title = "DNA",
                  "module1"),
         tabPanel(title = "Plot",
-                 "plot_module",
-                 mod_plot_module_server("plot_module_1"))
+                 mod_Plot_ui("Plot_1"))
       )
     )
   )

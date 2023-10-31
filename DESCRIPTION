@@ -1,7 +1,6 @@
 Package: Centraldogma16
 Title: PKG_TITLE
 Version: 0.0.0.9000
-<<<<<<< HEAD
 Authors@R:
   c(person(given = "Sebastian",
            family = "Wohlk",
@@ -23,9 +22,6 @@ Authors@R:
            family = "Bauer",
            role = "aut",
            email = "s231896@dtu.dk"))
-=======
-Authors@R: person('AUTHOR_FIRST', 'AUTHOR_LAST', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
->>>>>>> 317b9f03a6426b00753d9c391f4fad522fd3d9d1
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 

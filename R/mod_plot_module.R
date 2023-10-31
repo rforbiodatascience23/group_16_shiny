@@ -24,7 +24,6 @@ mod_plot_module_server <- function(id){
   })
 }
 
-<<<<<<< HEAD
 ui <- fluidPage(
 
   sidebarLayout(
@@ -42,8 +41,6 @@ ui <- fluidPage(
       outputId = ns("abundance")))
 
 )
-=======
->>>>>>> 972131ce0b43bf0f60a024e66ad41625a664864d
 
 ## To be copied in the UI
 # mod_plot_module_ui("plot_module_1")

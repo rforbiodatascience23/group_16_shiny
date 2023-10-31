@@ -11,6 +11,12 @@ app_ui <- function(request) {
     # Your application UI logic
     fluidPage(
       h1("Centraldogma16")
+      tabsetPanel(
+        tabPanel(title = "panel1",
+                 "module1"),
+        tabPanel(title = "panel2",
+                 "module2")
+      )
     )
   )
 }

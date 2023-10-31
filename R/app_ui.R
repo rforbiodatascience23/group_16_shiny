@@ -12,17 +12,11 @@ app_ui <- function(request) {
     fluidPage(
       h1("Centraldogma16"),
       tabsetPanel(
-<<<<<<< HEAD
         tabPanel(title = "DNA",
                  "module1"),
         tabPanel(title = "Plot",
                  mod_Plot_ui("Plot_1"))
-=======
-        tabPanel(title = "DNA to peptide translation",
-                 mod_module1_ui("module1_1")),
-        tabPanel(title = "panel2",
-                 "module2")
->>>>>>> f8c4064126222ea9afeb78181a54f9553bb4eac7
+
       )
     )
   )

@@ -24,6 +24,23 @@ mod_plot_module_server <- function(id){
   })
 }
 
+ui <- fluidPage(
+
+  sidebarLayout(
+
+    sidebarPanel(
+      textAreaInput(
+        inputId = ns("peptide"),
+        label = "Peptide sequence",
+        width = 300,
+        height = 100,
+        placeholder = "Insert peptide sequence"))),
+
+  mainPanel(
+    plotOutput(
+      outputId = ns("abundance")))
+
+)
 
 ## To be copied in the UI
 # mod_plot_module_ui("plot_module_1")

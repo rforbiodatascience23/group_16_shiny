@@ -7,5 +7,8 @@ $run_dev.*
 ^.here$
 ^LICENSE\.md$
 ^README\.Rmd$
+<<<<<<< HEAD
+=======
 ^app\.R$
 ^rsconnect$
+>>>>>>> 317b9f03a6426b00753d9c391f4fad522fd3d9d1

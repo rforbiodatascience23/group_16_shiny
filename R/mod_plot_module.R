@@ -24,14 +24,6 @@ mod_plot_module_server <- function(id){
   })
 }
 
-sidebarLayout(
-  sidebarPanel(
-    "peptide_sequence"
-  ),
-  mainPanel(
-    "plot"
-  )
-)
 
 ## To be copied in the UI
 # mod_plot_module_ui("plot_module_1")
